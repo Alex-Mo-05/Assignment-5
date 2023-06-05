@@ -2,8 +2,8 @@
 </script>
 
 <template>
-  <p id="intro">Welcome to NOTflix, log in and you will be able to see the current top 20 most popular movies and purchase
-    them.</p>
+  <p id="intro">Welcome to FilmFlix Direct, log in to see and purchase the current and most popular movies
+  </p>
   <img src="../assets/img/TheatreImage.png" />
 </template>
 
