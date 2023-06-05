@@ -44,7 +44,6 @@ let info = (
 </template>
 
 <style scoped>
-
 /* Change values to match screen at school */
 
 .modal-outer-container {
@@ -56,8 +55,9 @@ let info = (
   height: 100vh;
   background: rgba(0, 0, 0, 0.701);
   z-index: 3;
-  
+
 }
+
 .modal-inner-container {
   margin-left: 24vw;
   margin-top: 180px;
@@ -71,6 +71,7 @@ let info = (
   border-style: double;
   border-color: rgb(202, 26, 26);
 }
+
 .modal-outer-container .modal-inner-container .close-button {
   position: absolute;
   right: 375px;
@@ -83,12 +84,16 @@ let info = (
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bold;
 }
-.close-button, .buyButton:hover {
+
+.close-button,
+.buyButton:hover {
   cursor: pointer;
 }
+
 h1 {
   padding: 10px;
 }
+
 img {
   margin-left: 15px;
   width: 200px;
@@ -122,5 +127,4 @@ img {
 
 .close-button {
   left: 900px;
-}
-</style>
+}</style>

@@ -7,7 +7,7 @@ const props = defineProps(["login"]);
   <div class="headerContainer">
     <h1>NOTflix</h1>
     <RouterLink to="/login" custom v-slot="{ navigate }">
-      <button id ="loginButton" v-if="login" @click="navigate" role="link">Login</button>
+      <button id="loginButton" v-if="login" @click="navigate" role="link">Login</button>
     </RouterLink>
   </div>
   <div class="spaceBox"></div>
@@ -17,6 +17,7 @@ const props = defineProps(["login"]);
 .spaceBox {
   height: 87px;
 }
+
 .headerContainer {
   position: absolute;
   margin: 0px;
