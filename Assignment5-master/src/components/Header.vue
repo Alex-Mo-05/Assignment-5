@@ -5,7 +5,7 @@ const props = defineProps(["login"]);
 
 <template>
   <div class="headerContainer">
-    <h1>NOTflix</h1>
+    <h1>FilmFlix Direct</h1>
     <RouterLink to="/login" custom v-slot="{ navigate }">
       <button id="loginButton" v-if="login" @click="navigate" role="link">Login</button>
     </RouterLink>
@@ -19,13 +19,12 @@ const props = defineProps(["login"]);
 }
 
 .headerContainer {
-  position: absolute;
-  margin: 0px;
+  width:max-content;
+  margin: 10px;
   background-color: rgba(48, 48, 48, 0.151);
   border-bottom-style: solid;
   border-right-style: solid;
   padding-bottom: 4px;
-  border-radius: 20%;
   border-width: 4px;
   border-style: solid;
   border-color: rgb(202, 26, 26);
