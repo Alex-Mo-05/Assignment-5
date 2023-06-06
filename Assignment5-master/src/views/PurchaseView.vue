@@ -1,9 +1,9 @@
 <script setup>
-import SiteHeader from "../components/Header.vue";
-import SiteFooter from "../components/Footer.vue";
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
 import { useStore } from "../store/index.js";
 import router from "../router";
-import SiteModal from "../components/Modal.vue";
+import Modal from "../components/Modal.vue";
 import { ref } from "vue";
 
 const store = useStore();
@@ -12,7 +12,7 @@ await store.getMovies();
 const showModal = ref(false);
 const selectedId = ref(0);
 
-function addCart() {
+function openCart() {
   router.push("/cart");
 }
 
@@ -27,15 +27,15 @@ const closeModal = () => {
 </script>
 
 <template>
-  <SiteHeader />
+  <Header />
   <div>
-    <button @click="addCart()">Cart</button>
+    <button @click="openCart()">Cart</button>
     <div class="Movieposter">
       <img v-for="movie in store.movies" :src="movie.poster" @click="openModal(movie.id)" />
     </div>
-    <SiteModal v-if="showModal" @toggleModal="closeModal()" :id="selectedId" />
+    <Modal v-if="showModal" @toggleModal="closeModal()" :id="selectedId" />
   </div>
-  <SiteFooter />
+  <Footer />
 </template>
 
 <style scoped>

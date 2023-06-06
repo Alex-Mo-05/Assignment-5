@@ -1,22 +1,39 @@
 <script setup>
-import SiteHeader from "../components/Header.vue";
-import SiteFooter from "../components/Footer.vue";
-import { useStore } from '../store/index.js'
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
+import { useStore } from '../store/index.js';
+import router from "../router";
+
+
 const store = useStore();
+
+function openPurchase() {
+  router.push("/purchase");
+}
+
 </script>
 
 <template>
-  <SiteHeader />
+  <Header />
+  <button @click="openPurchase()">Catalog</button>
   <div class="cartBox" v-for="movie in Array.from(store.cart.values())">
     <p>Movie Title: {{ movie.title }}</p>
     <img :src="`https://image.tmdb.org/t/p/w500${movie.poster}`" />
   </div>
-  <SiteFooter />
+  <Footer />
 </template>
 
 <style scoped>
 :root {
   background-color: rgba(0, 0, 0, 0.856);
+}
+
+button {
+  font-size: 20px;
+  color: rgb(202, 26, 26);
+  background-color: rgb(54, 52, 52);
+  border-color: rgba(71, 70, 70, 0.76);
+  border-width: 3px;
 }
 
 .cartBox {

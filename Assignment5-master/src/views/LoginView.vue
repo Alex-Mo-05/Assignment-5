@@ -29,7 +29,7 @@ function Login() {
           <input class="enter" type="submit" value="Enter" @click="Login" />
         </form>
         <div v-if="wrongLogin">
-          <p>Incorrect username / password</p>
+          <p id="wrong">Incorrect username / password</p>
         </div>
       </div>
     </div>
@@ -69,4 +69,10 @@ h1 {
 .enter {
   width: 30%;
 }
+
+#wrong {
+  color: red;
+  margin-left: 5px;
+}
+
 </style>

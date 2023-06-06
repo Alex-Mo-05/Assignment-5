@@ -4,7 +4,7 @@
 <template>
   <p id="intro">Welcome to FilmFlix Direct, log in to see and purchase the current and most popular movies
   </p>
-  <img src="../assets/img/TheatreImage.png" />
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk67_1SMxpkLWMPWrgSMIM-8e3cbXlE9WBBA&usqp=CAU" />
 </template>
 
 <style scoped>

@@ -1,13 +1,13 @@
 <script setup>
-import SiteHeader from "../components/Header.vue";
-import SiteHero from "../components/Hero.vue";
-import SiteFooter from "../components/Footer.vue";
+import Header from "../components/Header.vue";
+import Hero from "../components/Hero.vue";
+import Footer from "../components/Footer.vue";
 </script>
 
 <template>
-  <SiteHeader login="yes" />
-  <SiteHero />
-  <SiteFooter />
+  <Header login="yes" />
+  <Hero />
+  <Footer />
 </template>
 
 <style scoped></style>
